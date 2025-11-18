@@ -11,9 +11,10 @@ def load_data(path="C:\\Users\\luism\\OneDrive\\Documentos\\A. 9no Semestre\\Tem
     return df
 
 if __name__ == "__main__":
-    df = load_data("C:\\Users\\luism\\OneDrive\\Documentos\\A. 9no Semestre\\Temas 2\\Reprocesamiento de datos por acentos\\demoDatosRaw.xlsx")
+    df = load_data("C:\\Users\\luism\\OneDrive\\Documentos\\A. 9no Semestre\\Temas 2\\Procesamiento de datos\\datosFarmaceuticos30k.xlsx")
     print("Filas cargadas:", len(df))
      # Guardar
     output_path = "C:\\Users\\luism\\OneDrive\\Documentos\\A. 9no Semestre\\Temas 2\\Procesamiento de datos\\datosFarmaceuticos30k.csv"
     df.to_csv(output_path, index=False, encoding="utf-8")
+
     print("Archivo procesado guardado en:", output_path)
